@@ -30,14 +30,14 @@ Initial installation is the same as for Cannon.js. See: [Scripts](https://github
 ### Including the Ammo.js build
 
 Ammo.js is not a dependency of this project. As a result, it must be included into your project manually. Recommended options are: [script tag](#script-tag) or [NPM and Webpack](#npm-and-webpack).
-The latest [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) build is available either via the [Ammo.js github](http://kripken.github.io/ammo.js/builds/ammo.wasm.js) (`http://kripken.github.io/ammo.js/builds/ammo.wasm.js`) or the [Mozilla Reality fork](https://mixedreality.mozilla.org/ammo.js/builds/ammo.wasm.js) (`https://mixedreality.mozilla.org/ammo.js/builds/ammo.wasm.js`) maintained by the [Mozilla Hubs](https://github.com/mozilla/hubs) team. The latter is especially optimized for use with the Ammo Driver and includes [some functionality](#hacd-and-vhacd) not yet available in the main repository.
+The latest [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) build is available either via the [Ammo.js github](http://kripken.github.io/ammo.js/builds/ammo.wasm.js) (`http://kripken.github.io/ammo.js/builds/ammo.wasm.js`) or the [Mozilla Reality fork](https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js) (`https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js`) created by the [Mozilla Hubs](https://github.com/mozilla/hubs) team. The latter is especially optimized for use with the Ammo Driver and includes [some functionality](#hacd-and-vhacd) not yet available in the main repository.
 
 #### Script Tag
 
 This is the easiest way to include Ammo.js in your project and is recommended for most AFrame projects. Simply add the following to your html file:
 
 ```html
-<script src="https://mixedreality.mozilla.org/ammo.js/builds/ammo.wasm.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js"></script>
 or
 <script src="http://kripken.github.io/ammo.js/builds/ammo.wasm.js"></script>
 ```
