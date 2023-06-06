@@ -15,7 +15,6 @@
     "preversion:readme": "replace 'aframe-physics-system@v\\d+\\.\\d+\\.\\d+' \"aframe-physics-system@v$npm_package_version\" ./README.md",
     "version": "npm run preversion:readme && npm run dist && git add -A dist README.md",
     "postversion": "git push && git push --tags && npm publish",
-    "postinstall": "patch-package"
   },
   "browserify-shim": {
     "three": "global:THREE"
@@ -46,7 +45,6 @@
     "cannon-es": "^0.9.1",
     "three-to-ammo": "^0.1.0",
     "three-to-cannon": "^4.0.0",
-    "patch-package": "^6.5.0",
     "webworkify": "^1.4.0"
   },
   "peerDependencies": {
