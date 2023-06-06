@@ -14,7 +14,7 @@
     "preversion": "npm run test:once",
     "preversion:readme": "replace 'aframe-physics-system@v\\d+\\.\\d+\\.\\d+' \"aframe-physics-system@v$npm_package_version\" ./README.md",
     "version": "npm run preversion:readme && npm run dist && git add -A dist README.md",
-    "postversion": "git push && git push --tags && npm publish",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "browserify-shim": {
     "three": "global:THREE"
